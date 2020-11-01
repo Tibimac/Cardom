@@ -10,4 +10,6 @@ import UIKit
 protocol ContactsScenesRouterCapable {
     var navigationController: UINavigationController { get set }
     func showDetails(ofContact: ContactViewModel)
+    func openMailSheet(email: String, from: UIViewController?)
+    func startPhoneCall(number: String)
 }

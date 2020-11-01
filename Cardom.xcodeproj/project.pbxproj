@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,9 @@
 		52033F42254ECA6B008F6D0C /* CacheContactsWorkerCapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033F41254ECA6B008F6D0C /* CacheContactsWorkerCapable.swift */; };
 		52033F47254EDA9F008F6D0C /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033F46254EDA9F008F6D0C /* ContactViewModel.swift */; };
 		52033F4E254EE463008F6D0C /* ContactsListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033F4D254EE463008F6D0C /* ContactsListNavigationController.swift */; };
+		52232AF9254F1DE200D41E23 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52232AF8254F1DE200D41E23 /* ContactListTableViewCell.swift */; };
+		52232AFC254F25DD00D41E23 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */; };
+		525211DE254F354B005E7E95 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 525211DD254F354B005E7E95 /* Reusable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,8 @@
 		52033F41254ECA6B008F6D0C /* CacheContactsWorkerCapable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheContactsWorkerCapable.swift; sourceTree = "<group>"; };
 		52033F46254EDA9F008F6D0C /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		52033F4D254EE463008F6D0C /* ContactsListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListNavigationController.swift; sourceTree = "<group>"; };
+		52232AF8254F1DE200D41E23 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525211DE254F354B005E7E95 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 				52033EBC254E1EB0008F6D0C /* SceneDelegate.swift */,
 				52033F4D254EE463008F6D0C /* ContactsListNavigationController.swift */,
 				52033EF0254E228D008F6D0C /* Contacts Scenes */,
+				52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */,
 				52033EC3254E1EB0008F6D0C /* Assets.xcassets */,
 				52033EC5254E1EB0008F6D0C /* LaunchScreen.storyboard */,
 				52033EC8254E1EB0008F6D0C /* Info.plist */,
@@ -126,6 +133,7 @@
 			children = (
 				52033F1B254E3912008F6D0C /* ContactsListViewCapable.swift */,
 				52033EBE254E1EB0008F6D0C /* ContactsListTableViewController.swift */,
+				52232AF8254F1DE200D41E23 /* ContactListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +242,9 @@
 			dependencies = (
 			);
 			name = Cardom;
+			packageProductDependencies = (
+				525211DD254F354B005E7E95 /* Reusable */,
+			);
 			productName = Cardom;
 			productReference = 52033EB7254E1EB0008F6D0C /* Cardom.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 52033EAE254E1EAF008F6D0C;
+			packageReferences = (
+				525211DC254F354B005E7E95 /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = 52033EB8254E1EB0008F6D0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +310,7 @@
 				52033F47254EDA9F008F6D0C /* ContactViewModel.swift in Sources */,
 				52033F4E254EE463008F6D0C /* ContactsListNavigationController.swift in Sources */,
 				52033F42254ECA6B008F6D0C /* CacheContactsWorkerCapable.swift in Sources */,
+				52232AF9254F1DE200D41E23 /* ContactListTableViewCell.swift in Sources */,
 				52033EF3254E22AD008F6D0C /* GetContactsWorker.swift in Sources */,
 				52033F35254E39EF008F6D0C /* ContactDetailsPresenterCapable.swift in Sources */,
 				52033ED8254E212F008F6D0C /* ContactsListInteractor.swift in Sources */,
@@ -303,6 +318,7 @@
 				52033F2F254E39CA008F6D0C /* ContactDetailsViewCapable.swift in Sources */,
 				52033F0B254E2D4A008F6D0C /* ContactDetailsSceneBuilder.swift in Sources */,
 				52033F3F254ECA5B008F6D0C /* CacheContactsWorker.swift in Sources */,
+				52232AFC254F25DD00D41E23 /* UIImageView+Utils.swift in Sources */,
 				52033EFF254E244C008F6D0C /* Contact.swift in Sources */,
 				52033EBB254E1EB0008F6D0C /* AppDelegate.swift in Sources */,
 				52033EF7254E2302008F6D0C /* ContactDetailsInteractor.swift in Sources */,
@@ -505,6 +521,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		525211DC254F354B005E7E95 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		525211DD254F354B005E7E95 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 525211DC254F354B005E7E95 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52033EAF254E1EAF008F6D0C /* Project object */;
 }

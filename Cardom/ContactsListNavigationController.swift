@@ -9,14 +9,12 @@ import UIKit
 
 class ContactsListNavigationController: UINavigationController {
 
-//    override init(rootViewController: UIViewController) {
-//        super.init(rootViewController: rootViewController)
-//        
-//        self.navigationBar.isTranslucent = false
-//        self.navigationBar.tintColor = .black
-//        self.navigationBar.barTintColor = .black
-//        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-//        self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//        self.navigationBar.shadowImage = UIImage()
-//    }
+    override init(rootViewController: UIViewController) {
+        super.init(rootViewController: rootViewController)
+        navigationBar.prefersLargeTitles = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

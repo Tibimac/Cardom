@@ -3,4 +3,84 @@
    uuid = "F5001366-FD66-4DBE-9431-47083A247821"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74C9215D-E452-407C-BDD9-ADD367F7BF8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cardom/Contacts Scenes/Contacts List Scene/View/ContactListTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ContactListTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "74C9215D-E452-407C-BDD9-ADD367F7BF8A - cf7519a7ef687d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cardom.ContactListTableViewCell.viewModel.getter : Swift.Optional&lt;Cardom.ContactViewModel&gt;"
+                  moduleName = "Cardom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tibimac/Cardom/Cardom/Contacts%20Scenes/Contacts%20List%20Scene/View/ContactListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "74C9215D-E452-407C-BDD9-ADD367F7BF8A - bb2bfdfbf724dbc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cardom.ContactListTableViewCell.viewModel.setter : Swift.Optional&lt;Cardom.ContactViewModel&gt;"
+                  moduleName = "Cardom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tibimac/Cardom/Cardom/Contacts%20Scenes/Contacts%20List%20Scene/View/ContactListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "209">
+               </Location>
+               <Location
+                  uuid = "74C9215D-E452-407C-BDD9-ADD367F7BF8A - 8794a7b795850ce5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cardom.ContactListTableViewCell.viewModel.modify : Swift.Optional&lt;Cardom.ContactViewModel&gt;"
+                  moduleName = "Cardom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tibimac/Cardom/Cardom/Contacts%20Scenes/Contacts%20List%20Scene/View/ContactListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "74C9215D-E452-407C-BDD9-ADD367F7BF8A - f8bf5ef6ff191381"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cardom.ContactListTableViewCell.viewModel.modify : Swift.Optional&lt;Cardom.ContactViewModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Cardom"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tibimac/Cardom/Cardom/Contacts%20Scenes/Contacts%20List%20Scene/View/ContactListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -9,5 +9,6 @@ import Foundation
 
 protocol ContactsListInteractorCapable {
     var presenter: ContactsListPresenterCapable? { get set }
-    func getContacts()
+    func getFirstContacts()
+    func getNextContacts()
 }

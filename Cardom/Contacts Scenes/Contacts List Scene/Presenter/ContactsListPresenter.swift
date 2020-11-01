@@ -11,12 +11,13 @@ class ContactsListPresenter: ContactsListPresenterCapable {
     
     var view: ContactsListViewCapable?
 
-    func prepareDisplay(ofContacts: [Contact]) {
-        let contactsViewModel = [ContactViewModel]()
-        
-        // Transform model to view model
-        
+    func prepareDisplay(ofContacts contacts: [Contact]) {
+        let contactsViewModel = contacts.map{ ContactViewModel(contact: $0) }
         view?.displayContacts(contacts: contactsViewModel)
+    }
+    
+    func loadEnded() {
+        view?.loadEnded()
     }
     
     func displayLoadingError() {

@@ -83,12 +83,12 @@ struct Login: Codable {
 
 // MARK: - Birthday
 struct Birthday: Codable {
-    let date: String
+    let date: Date
 }
 
 // MARK: - Registered
 struct Registered: Codable {
-    let date: String
+    let date: Date
 }
 
 // MARK: - Picture

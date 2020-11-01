@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ContactsScenesRouter: ContactsScenesRouterCapable {
     
@@ -27,4 +28,16 @@ class ContactsScenesRouter: ContactsScenesRouterCapable {
         navigationController.pushViewController(contactDetailsViewController as! UIViewController, animated: true)
     }
     
+    func openMailSheet(email: String, from vc: UIViewController?) {
+        guard let vc = vc else { return }
+        let mailComposer = MFMailComposeViewController()
+        mailComposer.setToRecipients([email])
+        vc.present(mailComposer, animated: true)
+    }
+    
+    func startPhoneCall(number: String) {
+        UIApplication.shared.open(URL(string: "tel://\(number)")!,
+                                  options: [:],
+                                  completionHandler: nil)
+    }
 }

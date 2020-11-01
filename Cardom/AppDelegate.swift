@@ -6,10 +6,32 @@
 //
 
 import UIKit
+import MessageUI
+import CoreTelephony
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    static let hasCarrier: Bool = {
+        if let mnc = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders?.first?.value.mobileNetworkCode {
+            return !mnc.isEmpty
+        } else {
+            return false
+        }
+    }()
+    
+    static let isCapableToCall: Bool = {
+        return hasCarrier && UIApplication.shared.canOpenURL(URL(string: "tel://")!)
+    }()
+    
+    static let isCapableToSMS: Bool = {
+        return hasCarrier && UIApplication.shared.canOpenURL(URL(string: "sms:")!)
+    }()
+    
+    static let canSendEmails: Bool = {
+        return MFMailComposeViewController.canSendMail()
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
