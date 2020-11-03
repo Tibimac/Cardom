@@ -37,6 +37,13 @@
 		52232AF9254F1DE200D41E23 /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52232AF8254F1DE200D41E23 /* ContactListTableViewCell.swift */; };
 		52232AFC254F25DD00D41E23 /* UIImageView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */; };
 		525211DE254F354B005E7E95 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 525211DD254F354B005E7E95 /* Reusable */; };
+		5258495D254F818B00E405C9 /* ContactDetailsHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258495C254F818B00E405C9 /* ContactDetailsHeaderTableViewCell.swift */; };
+		52584961254F8E8E00E405C9 /* ContactDetailsMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52584960254F8E8E00E405C9 /* ContactDetailsMapTableViewCell.swift */; };
+		52584964254F903300E405C9 /* ContactDetailsInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52584963254F903300E405C9 /* ContactDetailsInfoTableViewCell.swift */; };
+		525849682550B17C00E405C9 /* ContactDetailsInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525849672550B17C00E405C9 /* ContactDetailsInfoViewModel.swift */; };
+		5258496C2550BC4D00E405C9 /* ContactDetailsHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258496B2550BC4D00E405C9 /* ContactDetailsHeaderViewModel.swift */; };
+		525849702550BC7500E405C9 /* ContactDetailsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258496F2550BC7500E405C9 /* ContactDetailsMapViewModel.swift */; };
+		5272C31B25518F4C00AEC1BE /* Map+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272C31A25518F4C00AEC1BE /* Map+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +78,13 @@
 		52033F4D254EE463008F6D0C /* ContactsListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListNavigationController.swift; sourceTree = "<group>"; };
 		52232AF8254F1DE200D41E23 /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
 		52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utils.swift"; sourceTree = "<group>"; };
+		5258495C254F818B00E405C9 /* ContactDetailsHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		52584960254F8E8E00E405C9 /* ContactDetailsMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsMapTableViewCell.swift; sourceTree = "<group>"; };
+		52584963254F903300E405C9 /* ContactDetailsInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsInfoTableViewCell.swift; sourceTree = "<group>"; };
+		525849672550B17C00E405C9 /* ContactDetailsInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsInfoViewModel.swift; sourceTree = "<group>"; };
+		5258496B2550BC4D00E405C9 /* ContactDetailsHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsHeaderViewModel.swift; sourceTree = "<group>"; };
+		5258496F2550BC7500E405C9 /* ContactDetailsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsMapViewModel.swift; sourceTree = "<group>"; };
+		5272C31A25518F4C00AEC1BE /* Map+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +122,7 @@
 				52033EBC254E1EB0008F6D0C /* SceneDelegate.swift */,
 				52033F4D254EE463008F6D0C /* ContactsListNavigationController.swift */,
 				52033EF0254E228D008F6D0C /* Contacts Scenes */,
-				52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */,
+				5272C31D2551920700AEC1BE /* Utils Extensions */,
 				52033EC3254E1EB0008F6D0C /* Assets.xcassets */,
 				52033EC5254E1EB0008F6D0C /* LaunchScreen.storyboard */,
 				52033EC8254E1EB0008F6D0C /* Info.plist */,
@@ -120,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				52033F07254E2D21008F6D0C /* ContactsListSceneBuilder.swift */,
-				52033F46254EDA9F008F6D0C /* ContactViewModel.swift */,
 				52033ED5254E2110008F6D0C /* View */,
 				52033EDA254E2134008F6D0C /* Interactor */,
 				52033EDF254E2150008F6D0C /* Presenter */,
@@ -173,6 +186,7 @@
 			children = (
 				52033F2E254E39CA008F6D0C /* ContactDetailsViewCapable.swift */,
 				52033EE1254E223A008F6D0C /* ContactDetailsTableViewController.swift */,
+				5258495B254F816C00E405C9 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 				52033F18254E38EE008F6D0C /* ContactsScenesRouterCapable.swift */,
 				52033EED254E2281008F6D0C /* ContactsScenesRouter.swift */,
 				52033F05254E2873008F6D0C /* Model */,
+				52584959254F7E6A00E405C9 /* View Model */,
 				52033ED3254E20F4008F6D0C /* Contacts List Scene */,
 				52033EE5254E223E008F6D0C /* Contact Details Scene */,
 			);
@@ -224,6 +239,60 @@
 				52033F3E254ECA5B008F6D0C /* CacheContactsWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		52584959254F7E6A00E405C9 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				52033F46254EDA9F008F6D0C /* ContactViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		5258495B254F816C00E405C9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				525849762550BC8B00E405C9 /* Header */,
+				525849742550BC8500E405C9 /* Info */,
+				525849722550BC7A00E405C9 /* Map */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		525849722550BC7A00E405C9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5258496F2550BC7500E405C9 /* ContactDetailsMapViewModel.swift */,
+				52584960254F8E8E00E405C9 /* ContactDetailsMapTableViewCell.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		525849742550BC8500E405C9 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				525849672550B17C00E405C9 /* ContactDetailsInfoViewModel.swift */,
+				52584963254F903300E405C9 /* ContactDetailsInfoTableViewCell.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		525849762550BC8B00E405C9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5258496B2550BC4D00E405C9 /* ContactDetailsHeaderViewModel.swift */,
+				5258495C254F818B00E405C9 /* ContactDetailsHeaderTableViewCell.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5272C31D2551920700AEC1BE /* Utils Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52232AFB254F25DD00D41E23 /* UIImageView+Utils.swift */,
+				5272C31A25518F4C00AEC1BE /* Map+Utils.swift */,
+			);
+			path = "Utils Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,14 +374,19 @@
 				52033EBF254E1EB0008F6D0C /* ContactsListTableViewController.swift in Sources */,
 				52033EDD254E214A008F6D0C /* ContactsListPresenter.swift in Sources */,
 				52033F28254E3986008F6D0C /* ContactsListInteractorCapable.swift in Sources */,
+				525849682550B17C00E405C9 /* ContactDetailsInfoViewModel.swift in Sources */,
 				52033EEE254E2281008F6D0C /* ContactsScenesRouter.swift in Sources */,
 				52033F1F254E393D008F6D0C /* GetContactsWorkerCapable.swift in Sources */,
 				52033F47254EDA9F008F6D0C /* ContactViewModel.swift in Sources */,
 				52033F4E254EE463008F6D0C /* ContactsListNavigationController.swift in Sources */,
 				52033F42254ECA6B008F6D0C /* CacheContactsWorkerCapable.swift in Sources */,
+				52584964254F903300E405C9 /* ContactDetailsInfoTableViewCell.swift in Sources */,
 				52232AF9254F1DE200D41E23 /* ContactListTableViewCell.swift in Sources */,
 				52033EF3254E22AD008F6D0C /* GetContactsWorker.swift in Sources */,
+				5258496C2550BC4D00E405C9 /* ContactDetailsHeaderViewModel.swift in Sources */,
 				52033F35254E39EF008F6D0C /* ContactDetailsPresenterCapable.swift in Sources */,
+				5258495D254F818B00E405C9 /* ContactDetailsHeaderTableViewCell.swift in Sources */,
+				525849702550BC7500E405C9 /* ContactDetailsMapViewModel.swift in Sources */,
 				52033ED8254E212F008F6D0C /* ContactsListInteractor.swift in Sources */,
 				52033F2B254E39B2008F6D0C /* ContactsListPresenterCapable.swift in Sources */,
 				52033F2F254E39CA008F6D0C /* ContactDetailsViewCapable.swift in Sources */,
@@ -326,7 +400,9 @@
 				52033EBD254E1EB0008F6D0C /* SceneDelegate.swift in Sources */,
 				52033EE2254E223A008F6D0C /* ContactDetailsTableViewController.swift in Sources */,
 				52033F32254E39DD008F6D0C /* ContactDetailsInteractorCapable.swift in Sources */,
+				52584961254F8E8E00E405C9 /* ContactDetailsMapTableViewCell.swift in Sources */,
 				52033F19254E38EE008F6D0C /* ContactsScenesRouterCapable.swift in Sources */,
+				5272C31B25518F4C00AEC1BE /* Map+Utils.swift in Sources */,
 				52033F1C254E3912008F6D0C /* ContactsListViewCapable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W43TK7BXYU;
 				INFOPLIST_FILE = Cardom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tibimac.Cardom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -488,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W43TK7BXYU;
 				INFOPLIST_FILE = Cardom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,7 +573,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tibimac.Cardom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

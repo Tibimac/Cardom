@@ -13,11 +13,7 @@ import CoreTelephony
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     static let hasCarrier: Bool = {
-        if let mnc = CTTelephonyNetworkInfo().serviceSubscriberCellularProviders?.first?.value.mobileNetworkCode {
-            return !mnc.isEmpty
-        } else {
-            return false
-        }
+        return CTTelephonyNetworkInfo().subscriberCellularProvider != nil
     }()
     
     static let isCapableToCall: Bool = {

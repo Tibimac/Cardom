@@ -16,8 +16,8 @@ class ContactListTableViewCell: UITableViewCell, Reusable {
     var viewModel: ContactViewModel? {
         didSet {
             guard let viewModel = viewModel else { return }
-            photoImageView.load(url: viewModel.photo)
-            nameLabel.text = viewModel.name
+            photoImageView.loadContactPhoto(url: viewModel.photo)
+            nameLabel.text = viewModel.fullname
             emailButton.isHidden = !AppDelegate.canSendEmails
             phoneButton.isHidden = !AppDelegate.isCapableToCall
         }
@@ -82,14 +82,14 @@ class ContactListTableViewCell: UITableViewCell, Reusable {
             nameLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -8),
 
             emailButton.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor, constant: 8),
-            emailButton.leadingAnchor.constraint(greaterThanOrEqualTo: nameLabel.trailingAnchor, constant: 16),
+            emailButton.leadingAnchor.constraint(greaterThanOrEqualTo: nameLabel.trailingAnchor, constant: 8),
             emailButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             emailButton.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -8),
 
             phoneButton.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor, constant: 8),
-            phoneButton.leadingAnchor.constraint(equalTo: emailButton.trailingAnchor, constant: 16),
+            phoneButton.leadingAnchor.constraint(equalTo: emailButton.trailingAnchor, constant: 8),
             phoneButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            phoneButton.trailingAnchor.constraint(greaterThanOrEqualTo: contentView.trailingAnchor, constant: -8),
+            phoneButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             phoneButton.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -8)
         ])
         

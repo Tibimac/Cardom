@@ -9,11 +9,11 @@ import Foundation
 
 class ContactDetailsSceneBuilder {
 
-    class func buildScene(arroundView view: inout ContactDetailsViewCapable) {
+    class func buildScene(forContact contact: Contact, arroundView view: inout ContactDetailsViewCapable) {
         
         // MARK: Initialise components.
         let presenter = ContactDetailsPresenter()
-        let interactor = ContactDetailsInteractor()
+        let interactor = ContactDetailsInteractor(contact: contact)
         let navigationController = ContactsScenesRouter.sceneDelegate.rootNavigationController
         let router = ContactsScenesRouter(navigationController: navigationController)
         

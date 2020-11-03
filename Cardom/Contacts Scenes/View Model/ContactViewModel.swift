@@ -13,7 +13,7 @@ struct ContactViewModel: Equatable {
     let photo: URL
     let age: Int
     let dob: String
-    let name: String
+    let fullname: String
     let phone: String
     let email: String
     let city: String
@@ -25,15 +25,17 @@ struct ContactViewModel: Equatable {
         self.photo = URL(string: contact.picture.large)!
         self.age = Calendar.current.dateComponents([.year], from: contact.dob.date , to: Date()).year!
         self.dob = contact.dob.date.string
-        self.name = contact.name.first + " " + contact.name.last
+        self.fullname = contact.name.first + " " + contact.name.last
         self.phone = contact.phone
         self.email = contact.email
         self.city = contact.location.city + " " + contact.nat.emojiFlag
         
         if let latitude = Double(contact.location.coordinates.latitude), let longitude = Double(contact.location.coordinates.longitude) {
             let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            let region = MKCoordinateRegion(center: location, latitudinalMeters: 100000, longitudinalMeters: 100000)
+            guard region.isValid() else { self.mapOptions = nil; return }
             let snapshotOptions = MKMapSnapshotter.Options()
-            snapshotOptions.region = MKCoordinateRegion(center: location, latitudinalMeters: 1000, longitudinalMeters: 1000)
+            snapshotOptions.region = region
             self.mapOptions = snapshotOptions
         } else {
             self.mapOptions = nil
@@ -44,7 +46,9 @@ struct ContactViewModel: Equatable {
 fileprivate extension Date {
     var string: String {
         let formatter = DateFormatter()
-        formatter.dateStyle = .short
+        formatter.locale = Locale(identifier: "FR")
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
         return formatter.string(from: self)
     }
 }

@@ -66,4 +66,9 @@ class ContactsListInteractor: ContactsListInteractorCapable {
             }
         }
     }
+    
+    func contact(at index: Int) -> Contact? {
+        guard index < loadedContacts.count else { return nil }
+        return loadedContacts[index]
+    }
 }
