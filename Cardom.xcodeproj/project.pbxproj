@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213C39E32642D8050058538D /* CardomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213C39E22642D8050058538D /* CardomUITests.swift */; };
 		52033EBB254E1EB0008F6D0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033EBA254E1EB0008F6D0C /* AppDelegate.swift */; };
 		52033EBD254E1EB0008F6D0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033EBC254E1EB0008F6D0C /* SceneDelegate.swift */; };
 		52033EBF254E1EB0008F6D0C /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52033EBE254E1EB0008F6D0C /* ContactsListTableViewController.swift */; };
@@ -46,7 +47,20 @@
 		5272C31B25518F4C00AEC1BE /* Map+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272C31A25518F4C00AEC1BE /* Map+Utils.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		213C39E52642D8050058538D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52033EAF254E1EAF008F6D0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52033EB6254E1EAF008F6D0C;
+			remoteInfo = Cardom;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		213C39E02642D8050058538D /* CardomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		213C39E22642D8050058538D /* CardomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardomUITests.swift; sourceTree = "<group>"; };
+		213C39E42642D8050058538D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52033EB7254E1EB0008F6D0C /* Cardom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52033EBA254E1EB0008F6D0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52033EBC254E1EB0008F6D0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		213C39DD2642D8050058538D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52033EB4254E1EAF008F6D0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,10 +120,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		213C39E12642D8050058538D /* CardomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				213C39E22642D8050058538D /* CardomUITests.swift */,
+				213C39E42642D8050058538D /* Info.plist */,
+			);
+			path = CardomUITests;
+			sourceTree = "<group>";
+		};
 		52033EAE254E1EAF008F6D0C = {
 			isa = PBXGroup;
 			children = (
 				52033EB9254E1EB0008F6D0C /* Cardom */,
+				213C39E12642D8050058538D /* CardomUITests */,
 				52033EB8254E1EB0008F6D0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				52033EB7254E1EB0008F6D0C /* Cardom.app */,
+				213C39E02642D8050058538D /* CardomUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,6 +330,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		213C39DF2642D8050058538D /* CardomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213C39E92642D8050058538D /* Build configuration list for PBXNativeTarget "CardomUITests" */;
+			buildPhases = (
+				213C39DC2642D8050058538D /* Sources */,
+				213C39DD2642D8050058538D /* Frameworks */,
+				213C39DE2642D8050058538D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				213C39E62642D8050058538D /* PBXTargetDependency */,
+			);
+			name = CardomUITests;
+			productName = CardomUITests;
+			productReference = 213C39E02642D8050058538D /* CardomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		52033EB6254E1EAF008F6D0C /* Cardom */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52033ECB254E1EB0008F6D0C /* Build configuration list for PBXNativeTarget "Cardom" */;
@@ -327,6 +377,10 @@
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					213C39DF2642D8050058538D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 52033EB6254E1EAF008F6D0C;
+					};
 					52033EB6254E1EAF008F6D0C = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -349,11 +403,19 @@
 			projectRoot = "";
 			targets = (
 				52033EB6254E1EAF008F6D0C /* Cardom */,
+				213C39DF2642D8050058538D /* CardomUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		213C39DE2642D8050058538D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52033EB5254E1EAF008F6D0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,6 +428,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		213C39DC2642D8050058538D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213C39E32642D8050058538D /* CardomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52033EB3254E1EAF008F6D0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +479,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		213C39E62642D8050058538D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52033EB6254E1EAF008F6D0C /* Cardom */;
+			targetProxy = 213C39E52642D8050058538D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		52033EC5254E1EB0008F6D0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -421,6 +499,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		213C39E72642D8050058538D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W43TK7BXYU;
+				INFOPLIST_FILE = CardomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tibimac.CardomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cardom;
+			};
+			name = Debug;
+		};
+		213C39E82642D8050058538D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W43TK7BXYU;
+				INFOPLIST_FILE = CardomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tibimac.CardomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cardom;
+			};
+			name = Release;
+		};
 		52033EC9254E1EB0008F6D0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -580,6 +696,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		213C39E92642D8050058538D /* Build configuration list for PBXNativeTarget "CardomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213C39E72642D8050058538D /* Debug */,
+				213C39E82642D8050058538D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		52033EB2254E1EAF008F6D0C /* Build configuration list for PBXProject "Cardom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
