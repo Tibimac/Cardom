@@ -64,6 +64,7 @@ class ContactListTableViewCell: UITableViewCell, Reusable {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        accessibilityIdentifier = "contact_list_cell"
         accessoryType = .disclosureIndicator
         contentView.addSubview(photoImageView)
         contentView.addSubview(nameLabel)

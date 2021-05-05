@@ -60,7 +60,7 @@ class ContactDetailsTableViewController: UITableViewController, ContactDetailsVi
         tableView.register(cellType: ContactDetailsMapTableViewCell.self)
         
         navigationItem.largeTitleDisplayMode = .never
-        
+        view.accessibilityIdentifier = "contact_details_view_controller"
         /* For unknow reason the view controller to add contact is ot displayed so feature is not yet accessible. See router for details. */
 //        let addButton = UIBarButtonItem(image:  UIImage(systemName: "person.crop.circle.badge.plus"), style: .plain, target: self, action: #selector(addToContacts))
 //        navigationItem.rightBarButtonItem = addButton
